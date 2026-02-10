@@ -29,7 +29,7 @@
 ### 📸 Project Preview
 
 #### Services Page (Service Display)
-![Home Page](images/home.png)
+![Home Page](images/home1.png)
 
 #### Profile page  
 ![Add Service](images/profile.png)
