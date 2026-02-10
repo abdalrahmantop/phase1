@@ -29,10 +29,7 @@
 ### 📸 Project Preview
 
 #### Services Page (Service Display)
-![Home Page](screenshots/home.png)
+![Home Page](images/home.png)
 
-#### User Login
-![Login Page](screenshots/login.png)
-
-#### Profile page  (Freelancer Dashboard)
-![Add Service](screenshots/profile.png)
+#### Profile page  
+![Add Service](images/profile.png)
