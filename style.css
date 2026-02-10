@@ -1,0 +1,263 @@
+
+
+
+
+.container {
+    display: flex;          
+    width: 100%;          
+    
+     min-height: calc(100vh - 140px); 
+    
+    background-color: #ffffff;  
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.sidebar {
+    flex: 0 0 15%; 
+     background-color: #e5eaff; 
+    min-height: 100%;
+}
+
+.main-content {
+    flex: 0 0 85%;
+     background-color: #f5f6fa; 
+    min-height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+
+.center-element {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+
+.content-header {
+    margin-bottom: 20px;
+}
+
+.content-header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #212529;
+}
+
+.content-header p {
+    margin: 4px 0 0;
+    color: #6C757D;
+    font-size: 14px;
+}
+
+.table-wrapper {
+    margin-top: 10px;
+    background: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #DEE2E6;
+    overflow: hidden;
+}
+
+.services-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.services-table thead {
+    background-color: #f1f3f5;
+}
+
+.services-table th,
+.services-table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #DEE2E6;
+    text-align: left;
+    vertical-align: top;
+}
+
+.services-table th {
+    font-weight: 600;
+    color: #495057;
+}
+
+.services-table tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.services-table tbody tr:hover {
+    background-color: #e9f5ff;
+}
+
+.services-table td:nth-child(3) {
+    max-width: 320px;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.status-active {
+    background-color: #c3ecb2;
+    color: #2e7d32;
+}
+
+.status-inactive {
+    background-color: #eeb2b2;
+     color: #c62828;
+
+}
+
+ 
+.side-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.side-nav li {
+    margin-bottom: 8px;  
+}
+
+ .side-nav a {
+    text-decoration: none;
+    color: #212529;  
+    display: block;
+    padding: 12px 15px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    border-left: 4px solid transparent;  
+}
+
+ .side-nav a:hover {
+    background-color: #f8f9fa;
+    color: #007bff;
+}
+
+ .side-nav li.active a {
+    background-color: #e7f3ff;  
+    color: #007bff;             
+    font-weight: bold;
+    border-left: 4px solid #007bff;  
+}
+
+.site-footer {
+    background: #212529;
+    color: #f8f9fa;
+    border-top: 1px solid #343a40;
+    padding: 32px 24px; 
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+.footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.footer-logo img {
+    height: 40px;
+    width: auto;
+    display: block;
+}
+
+.footer-logo h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.footer-inner h3 {
+    margin: 0 0 8px;
+    font-size: 18px;
+}
+
+.footer-inner p {
+    margin: 4px 0;
+}
+
+.footer-inner a {
+    color: #adb5bd;
+    text-decoration: none;
+}
+
+.footer-inner a:hover {
+    color: #ffffff;
+}
+
+.footer-copy {
+    margin-top: 10px;
+    color: #adb5bd;
+    font-size: 13px;
+}
+
+
+
+
+ .input-error {
+    border: 2px solid #dc3545 !important;
+    background-color: #fff8f8;
+}
+
+ .error-message-text {
+    color: #dc3545;
+    font-size: 0.85rem;
+    font-weight: bold;
+    display: block;
+    margin-top: 5px;
+}
+
+
+ .message-success {
+    background-color: #D4EDDA;
+    color: #155724;  
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    border: 1px solid #C3E6CB;
+}
+
+ .message-error {
+    background-color: #F8D7DA;
+    color: #721C24;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    border: 1px solid #F5C6CB;
+}
+
+ .message-warning {
+    background-color: #FFF3CD;
+    color: #856404;
+    padding: 15px;
+}
+
+ .message-info {
+    background-color: #D1ECF1;
+    color: #0C5460;
+    padding: 15px;
+}
+
+
+
+
+

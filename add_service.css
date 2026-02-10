@@ -1,0 +1,76 @@
+/* Container for the steps */
+.steps-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Individual Step Item */
+.step-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    flex: 1;
+}
+
+/* The Circle Number */
+.step-number {
+    width: 35px;
+    height: 35px;
+    background-color: #dee2e6;
+    color: #6c757d;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: 8px;
+    transition: all 0.3s ease;
+}
+
+/* The Text Label */
+.step-label {
+    font-size: 14px;
+    color: #6c757d;
+    font-weight: 500;
+}
+
+/* The Connecting Line */
+.step-line {
+    height: 2px;
+    background-color: #dee2e6;
+    flex: 1;
+    margin-bottom: 25px; /* يوازن ارتفاع الدوائر */
+    transition: all 0.3s ease;
+}
+
+/* Active State Colors */
+.step-item.active .step-number {
+    background-color: #007bff; /* لون أساسي */
+    color: #fff;
+}
+
+.step-item.active .step-label {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.step-line.active {
+    background-color: #007bff;
+}
+
+/* Area where the form appears */
+.form-content-area {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    min-height: 400px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}

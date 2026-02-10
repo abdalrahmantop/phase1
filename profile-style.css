@@ -1,0 +1,124 @@
+/* تنسيق التخطيط الأساسي داخل منطقة المحتوى */
+/* تنسيق التخطيط الأساسي */
+.profile-layout {
+    display: flex;
+    gap: 25px; /* الفراغ بين العمودين */
+    align-items: flex-start;
+    width: 100%;
+    /* تأكد من إضافة box-sizing عشان الـ padding ما يضرب العرض */
+    box-sizing: border-box; 
+    padding-right: 20px; /* فراغ بسيط من اليمين عشان ما يلزق بالحافة */
+}
+
+/* العمود الأيسر (30%) */
+.left-column {
+    /* بنحكي له خذ 30% واخصم منها جزء من الـ gap */
+    flex: 0 0 calc(30% - 12.5px); 
+    position: sticky;
+    padding-left: 10px;
+    top: 20px;
+}
+
+/* العمود الأيمن (70%) */
+.right-column {
+    /* بنحكي له خذ 70% واخصم منها جزء من الـ gap */
+    flex: 0 0 calc(70% - 12.5px);
+    background: #fff;
+    padding: 25px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); /* إضافة ظل خفيف عشان يبين حدوده */
+    box-sizing: border-box;
+}
+
+.form-section {
+    margin-bottom: 30px;
+}
+
+/* تأكد إن الـ main-content ما عنده overflow */
+.main-content {
+    overflow-x: hidden; 
+}
+
+/* كرت البروفايل */
+.profile-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: #00000020 0px 2px 10px;
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* دائرية */
+    object-fit: cover;
+    border: 3px solid #eee;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+/* Badge الأدوار */
+.role-badge {
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 8px;
+}
+.role-badge.client { background-color: #007BFF; }
+.role-badge.freelancer { background-color: #28A745; }
+
+/* شبكة الإحصائيات 2x2 */
+.stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.stat-item {
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #DEE2E6;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.stat-num {
+    font-size: 32px;
+    font-weight: bold;
+    display: block;
+    line-height: 1;
+}
+
+.stat-label {
+    font-size: 14px;
+    color: #6C757D;
+    margin-top: 5px;
+    display: block;
+}
+
+/* تلوين خاص حسب المطلوب */
+.stat-item.active .stat-num { color: #28A745; }
+.stat-item.featured .stat-num { color: #FFD700; }
+
+.change-photo-link {
+    display: block;
+    margin-top: 10px;
+    color: #007BFF; /* لون أزرق براند */
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+.change-photo-link:hover {
+    color: #0056b3;
+}

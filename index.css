@@ -1,0 +1,42 @@
+  .welcome-section {
+            text-align: center;
+            padding: 80px 20px;
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            margin-top: 20px;
+        }
+        .welcome-section h1 {
+            font-size: 3rem;
+            color: #2563eb;
+            margin-bottom: 10px;
+            font-weight: 800;
+        }
+        .platform-name { color: #1e293b; }
+        .description {
+            font-size: 1.2rem;
+            color: #64748b;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            line-height: 1.6;
+        }
+        .dev-card {
+            background: #f8fafc;
+            display: inline-block;
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+        }
+        .dev-card h2 { color: #1e293b; margin-bottom: 5px; }
+        .dev-card p { color: #2563eb; font-weight: bold; font-size: 1.1rem; margin-bottom: 20px; }
+        .profile-link {
+            background: #2563eb;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        .profile-link:hover { background: #1d4ed8; box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3); }
+  
